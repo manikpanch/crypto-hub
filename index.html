@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Hub</title>
+
+  <!-- TailwindCSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <nav class="p-4 bg-gray-800 flex justify-between">
+    <h1 class="text-xl font-bold">Crypto Hub</h1>
+    <div>
+      <a href="#tokens" class="mx-2">Tokens</a>
+      <a href="#news" class="mx-2">News</a>
+      <a href="#learn" class="mx-2">Learn</a>
+      <a href="#donate" class="mx-2">Donate</a>
+    </div>
+  </nav>
+
+  <main id="app" class="p-4 space-y-10">
+    <section id="tokens"><h2 class="text-2xl font-semibold mb-2">Top 10 Tokens</h2><div id="tokenGrid" class="grid md:grid-cols-4 gap-4"></div></section>
+    <section id="news"><h2 class="text-2xl font-semibold mb-2">Crypto News</h2><div id="newsFeed" class="grid md:grid-cols-2 gap-4"></div></section>
+    <section id="learn"><h2 class="text-2xl font-semibold mb-2">Learn Crypto Basics</h2><div id="learnSection" class="grid md:grid-cols-3 gap-4"></div></section>
+    <section id="donate" class="text-center"><button id="donateBtn" class="bg-yellow-400 text-black px-4 py-2 rounded-full mt-4">💰 Donate via Metamask</button></section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 p-4">© 2025 Crypto Hub</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
